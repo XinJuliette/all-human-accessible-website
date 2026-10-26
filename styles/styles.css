@@ -54,21 +54,33 @@ body {
 
 /* DROPDOWN NAVIGATION */
 .dropdownnav {
+/*     background-color: pink; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    position: relative;
-    gap: .5em;
+    grid-template-rows: repeat(3, 1fr);
     text-align: right;
+    position: relative;
+    gap: 10%;
+    top: -100%;
+    translate: 0 -100%;
     width: 100%;
     height: 200%;
-    background-color: white;
-    border-radius: 2em;
+    border-radius: 1em;
+    padding: 10%;
+    transition: 0,3s;
 
         a:hover {
             text-decoration: underline;
             text-decoration-color: var(--bodytext);
         }
+}
+
+.navbtn {
+    cursor: pointer;
+}
+
+.toonMenu {
+    translate: 0;
 }
 
 /* BODY OPMAAK */
