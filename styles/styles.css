@@ -52,6 +52,25 @@ body {
     }
 }
 
+/* DROPDOWN NAVIGATION */
+.dropdownnav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    gap: .5em;
+    text-align: right;
+    width: 100%;
+    height: 200%;
+    background-color: white;
+    border-radius: 2em;
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--bodytext);
+        }
+}
+
 /* BODY OPMAAK */
 main {
     color: var(--lightgrey);
@@ -59,5 +78,5 @@ main {
 
 a {
     text-decoration: none;
-    color: var(--bodytext)
+    color: var(--bodytext);
 }
