@@ -21,7 +21,9 @@ body {
     color: var(--bodytext);
     font-family: 'TASA orbiter', sans-serif;
 }
+/* NAV-BAR */
 .nav-bar {
+    background-color: white;
     display: grid;
     justify-content:center;
     justify-items: center;
@@ -43,5 +45,19 @@ body {
         grid-area: menu;
         border: none;
         background-color: transparent;
+
+        :hover {
+            cursor: pointer;
+        }
     }
+}
+
+/* BODY OPMAAK */
+main {
+    color: var(--lightgrey);
+}
+
+a {
+    text-decoration: none;
+    color: var(--bodytext)
 }
