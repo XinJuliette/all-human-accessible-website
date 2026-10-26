@@ -1,6 +1,20 @@
 /* COLOUR-PALETTE */
 :root {
-    --bodytext: #322F2F;
+    --lightpink: #EFB4D9;
+    --darkpink: #E68EC5;
+    --deeppink: #80285F;
+    --lightcyan: #C2E9E1;
+    --darkcyan: #66C7B4;
+    --lightblue: #C2E1F2;
+    --darkblue: #66B3DF;
+    --lightgrey: #F2F2F2;
+    --midgrey: #E6E6E6;
+    --darkgrey: #322F2F;
+    --background-website: #F2F2F2;
+    --dropshadow: #14131340;
+
+    --bodytext: #494949;
+    --lightbodytext: #616161;
 }
 /* FONT-FAMILY */
 body {
@@ -25,7 +39,7 @@ body {
     #title {
         grid-area: title;
     }
-    #menu {
+    #navbutton {
         grid-area: menu;
         border: none;
         background-color: transparent;
