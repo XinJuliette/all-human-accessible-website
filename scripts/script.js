@@ -1,7 +1,6 @@
 const navbtn = document.querySelector(".navbtn");
-const menubtn = document.querySelector(".hamburgmenu");
+const menubtn = document.querySelector(".hamburgermenu");
 const deNav = document.querySelector(".dropdownnav")
-
 
 menubtn.addEventListener("click", openMenu);
 
