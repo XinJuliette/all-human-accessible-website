@@ -189,8 +189,14 @@ header {
     "label label label"
     ;
 
+    gap: .5em;
+    padding: .5em;
+    border-radius: .5em;
+    margin: .7em;
+
         #name-function {
             grid-area: name;
+
                 #name {
                     font-weight: 700;
                 }
@@ -212,6 +218,14 @@ header {
         }
         #labels {
             grid-area: label;
+                p {
+                    border-color: var(--bodytext);
+                    border-style:outset;
+                    border-width: 2px;
+                    padding: .5em;
+                    border-radius: 4em;
+                    width: fit-content;
+                }
         }
 
 
