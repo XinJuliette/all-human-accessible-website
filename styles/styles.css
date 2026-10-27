@@ -84,6 +84,8 @@ header {
     z-index: 10;
         a{
             font-size: 1.5em;
+            text-decoration: none;
+            color: var(--bodytext)
         }
 
         a:hover {
@@ -215,6 +217,9 @@ header {
         }
         #title {
             grid-area: title;
+                h4 {
+                    font-size: 2em;
+                }
         }
         #labels {
             grid-area: label;
