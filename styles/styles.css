@@ -176,6 +176,38 @@ header {
     }
 }
 
+/* CARD OPMAAK */
+.card {
+    background-color: pink;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: repeat(3(1fr));
+    grid-template-areas: 
+    "name save more"
+    "title title title"
+    "label label label"
+    ;
+
+        #name-function {
+            grid-area: name;
+        }
+        #save-button {
+            grid-area: save;
+        }
+        #more {
+            grid-area: more;
+        }
+        #title {
+            grid-area: title;
+        }
+        #labels {
+            grid-area: label;
+        }
+
+
+}
+
 /* BOOKMARKED AND RECOMMENDED BUTTONS */
     #filter-collapsed {
         padding: .5em;
