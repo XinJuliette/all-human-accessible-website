@@ -163,8 +163,7 @@ header {
     background:var(--midgrey);
     }
 
-    @media (min-width: 930px) {
-    align-items: center;
+    @media (min-width: 597px) {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -173,6 +172,30 @@ header {
     ;
     }
 }
+
+/* BOOKMARKED AND RECOMMENDED BUTTONS */
+    #filter-collapsed {
+        padding: .5em;
+        border-radius: .3em;
+        border-color: transparent;
+        background-color: var(--midgrey);
+    }
+
+    #filter-collapsed:hover {
+    cursor: pointer;
+    }
+
+    #recommended-buttons button, #bookmarked-buttons button {
+        background-color: transparent;
+        border-radius: .3em;
+        padding: .5em;
+        border-color: transparent;
+        width: fit-content;
+        justify-self: end;
+            :hover {
+                cursor: pointer;
+                
+    }
 
 /* BODY OPMAAK */
 body {
