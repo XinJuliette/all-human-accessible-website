@@ -179,8 +179,8 @@ header {
 }
 
 /* CARD OPMAAK */
-.cardvar1 {
-    background-color: white;
+.cardvar1, .cardvar2, .cardvar3 {
+        background-color: white;
     text-decoration: none;
     color: var(--bodytext);
         :hover {
@@ -188,15 +188,17 @@ header {
         }
 
     padding: 1em;
-    border-radius: .5em;
+    border-radius: 1em;
     margin: .7em;
 
-    height:300px;
+    height:320px;
     width: 320px;
         :hover {
             cursor: pointer;
         }
+}
 
+.cardvar1 {
     display: grid;
     grid-template-columns: 8fr 1fr 1fr;
     grid-template-rows: repeat(3(1fr));
@@ -252,28 +254,9 @@ header {
                     width: fit-content;
                 }
         }
-
-
 }
 
 .cardvar2 {
-    background-color: white;
-    text-decoration: none;
-    color: var(--bodytext);
-        :hover {
-            cursor: pointer;
-        }
-
-    padding: 1em;
-    border-radius: .5em;
-    margin: .7em;
-
-    height:300px;
-    width: 320px;
-        :hover {
-            cursor: pointer;
-        }    
-
     display: grid;
     grid-template-columns: 2fr 5fr 1fr 1fr;
     grid-template-rows: repeat(4,1fr);
@@ -324,6 +307,82 @@ header {
                     padding: .5em;
                     border-radius: 4em;
                     width: fit-content;
+                }
+        }
+}
+
+.cardvar3 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "name name save more"
+    "title title title title"
+    "comment comment comment comment"
+    "label label label label"
+    ;
+
+        #name-function {
+            grid-area: name;
+
+                #name {
+                    font-weight: 700;
+                }
+                #function {
+                    font-weight: 200;
+                    font-style: italic;
+                    color: var(--lightbodytext)
+                }
+                #name,#function {
+                        font-size: 1.2em;
+                        margin: .5em;
+                }
+        }
+/*         #placeholder {
+            grid-area: empty;
+        } */
+        #save-button {
+            grid-area: save;
+        }
+        #more {
+            grid-area: more;
+        }
+            #save-button,#more {
+                background-color: transparent;
+                border-color: transparent;
+                justify-content: top-right;
+                    :hover {
+                        cursor:pointer;
+                    }
+            }
+        #title {
+            grid-area: title;
+                h4 {
+                font-size: 1.6em;
+                margin-bottom: 0;
+                }             
+        }
+        #comments {
+            grid-area: comment;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .5em;
+        }
+        #labels {
+            grid-area: label;
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+                p {
+                    border-color: var(--bodytext);
+                    border-style:outset;
+                    border-width: 2px;
+                    padding: .5em;
+                    border-radius: 4em;
+                    width: fit-content;
+                    text-wrap: nowrap;
                 }
         }
 }
