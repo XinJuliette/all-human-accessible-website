@@ -18,6 +18,7 @@
 }
 /* FONT-FAMILY */
 body {
+    background-color: var(--lightgrey);
     color: var(--bodytext);
     font-family: 'TASA orbiter', sans-serif;
 }
@@ -140,7 +141,9 @@ header {
             text-wrap: wrap;
             padding: 1em;
             border-radius: 8px;
-            box-shadow: 0px 4px 0px var(--dropshadow);
+            box-shadow: 0px 5px 0px var(--dropshadow);
+            text-decoration: none;
+            color: var(--bodytext);
         }
 
         a:hover {
@@ -190,19 +193,7 @@ header {
         border-radius: .3em;
         padding: .5em;
         border-color: transparent;
-        width: fit-content;
-        justify-self: end;
             :hover {
-                cursor: pointer;
-                
+                cursor: pointer;     
+            }     
     }
-
-/* BODY OPMAAK */
-body {
-    background-color: var(--lightgrey);
-}
-
-a {
-    text-decoration: none;
-    color: var(--bodytext);
-}
