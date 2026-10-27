@@ -350,7 +350,7 @@ header {
             #save-button,#more {
                 background-color: transparent;
                 border-color: transparent;
-                justify-content: top-right;
+                justify-self:right;
                     :hover {
                         cursor:pointer;
                     }
