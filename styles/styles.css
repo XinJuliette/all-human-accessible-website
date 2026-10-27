@@ -187,6 +187,16 @@ header {
             cursor: pointer;
         }
 
+    padding: 1em;
+    border-radius: .5em;
+    margin: .7em;
+
+    height:300px;
+    width: 320px;
+        :hover {
+            cursor: pointer;
+        }
+
     display: grid;
     grid-template-columns: 8fr 1fr 1fr;
     grid-template-rows: repeat(3(1fr));
@@ -195,17 +205,6 @@ header {
     "title title title"
     "label label label"
     ;
-
-    gap: .5em;
-    padding: 1em;
-    border-radius: .5em;
-    margin: .7em;
-
-    min-height:fit-content;
-    max-width: 320px;
-        :hover {
-            cursor: pointer;
-        }
 
         #name-function {
             grid-area: name;
@@ -264,24 +263,52 @@ header {
         :hover {
             cursor: pointer;
         }
+
+    padding: 1em;
+    border-radius: .5em;
+    margin: .7em;
+
+    height:300px;
+    width: 320px;
+        :hover {
+            cursor: pointer;
+        }    
+
     display: grid;
     grid-template-columns: 2fr 5fr 1fr 1fr;
     grid-template-rows: repeat(4,1fr);
     grid-template-areas: 
-    "picture save save more"
+    "picture empty save more"
     "picture name name name"
     "picture work work work"
     "label label label label"
     ;
+
+
+
         img {
+            border-radius: 35em;
             grid-area: picture;
+            aspect-ratio: 1/2;
+            height:100%;
+            object-fit: cover;
+        }
+        #placeholder {
+            grid-area: empty;
         }
         #save-button {
             grid-area: save;
-        }        
+        }
         #more {
             grid-area: more;
         }
+            #save-button,#more {
+                background-color: transparent;
+                border-color: transparent;
+                    :hover {
+                        cursor:pointer;
+                    }
+            }
         #name-function {
             grid-area: name;
         }
@@ -290,6 +317,14 @@ header {
         }
         #labels {
             grid-area: label;
+                p {
+                    border-color: var(--bodytext);
+                    border-style:outset;
+                    border-width: 2px;
+                    padding: .5em;
+                    border-radius: 4em;
+                    width: fit-content;
+                }
         }
 }
 
