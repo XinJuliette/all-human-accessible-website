@@ -180,7 +180,12 @@ header {
 
 /* CARD OPMAAK */
 .card {
-    background-color: pink;
+    background-color: white;
+    text-decoration: none;
+    color: var(--bodytext);
+        :hover {
+            cursor: pointer;
+        }
 
     display: grid;
     grid-template-columns: 8fr 1fr 1fr;
@@ -192,9 +197,15 @@ header {
     ;
 
     gap: .5em;
-    padding: .5em;
+    padding: 1em;
     border-radius: .5em;
     margin: .7em;
+
+    min-height:fit-content;
+    max-width: 320px;
+        :hover {
+            cursor: pointer;
+        }
 
         #name-function {
             grid-area: name;
@@ -204,10 +215,13 @@ header {
                 }
                 #function {
                     font-weight: 200;
-                    font-size: medium;
                     font-style: italic;
                     color: var(--lightbodytext)
                 }
+                    #name,#function {
+                        font-size: 1.2em;
+                        margin: .5em;
+                    }
         }
         #save-button {
             grid-area: save;
@@ -215,10 +229,17 @@ header {
         #more {
             grid-area: more;
         }
+            #save-button,#more {
+                background-color: transparent;
+                border-color: transparent;
+                    :hover {
+                        cursor:pointer;
+                    }
+            }
         #title {
             grid-area: title;
                 h4 {
-                    font-size: 2em;
+                    font-size: 1.6em;
                 }
         }
         #labels {
