@@ -181,7 +181,7 @@ header {
     background-color: pink;
 
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr 1fr;
     grid-template-rows: repeat(3(1fr));
     grid-template-areas: 
     "name save more"
@@ -191,6 +191,15 @@ header {
 
         #name-function {
             grid-area: name;
+                #name {
+                    font-weight: 700;
+                }
+                #function {
+                    font-weight: 200;
+                    font-size: medium;
+                    font-style: italic;
+                    color: var(--lightbodytext)
+                }
         }
         #save-button {
             grid-area: save;
