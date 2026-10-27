@@ -56,7 +56,8 @@ body {
 
 /* DROPDOWN NAVIGATION */
 header {
-    position: relative;
+    position: sticky;
+    background-color: white;
 }
 
 .dropdownnav {
@@ -72,7 +73,8 @@ header {
     grid-template-columns: 1fr;
     gap: 1em;
     text-align: right;
-    border-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
     padding: 1.5em;
 
     translate: 0 -100%;
@@ -103,9 +105,79 @@ header {
     visibility: visible;
 }
 
+/* NAVIGATION SECTION OPMAAK */
+#intro {
+    text-align: center;
+}
+#nav-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 1em;
+
+    grid-template-areas: 
+    "colleagues opportunities"
+    "events events"
+    ;
+
+    #colleagues {
+        grid-area: colleagues;
+    }
+
+    #opportunities {
+        grid-area: opportunities;
+    }
+    
+    #events {
+        grid-area: events;
+    }
+
+        a {
+            font-size: 1.3em;
+            align-content: center;
+            background-color: var(--lightpink);
+            text-align: center;
+            text-wrap: wrap;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0px 4px 0px var(--dropshadow);
+        }
+
+        a:hover {
+            box-shadow: none;
+        }
+
+        a:nth-of-type(1) {
+            background-color: var(--lightpink);
+        }
+        a:nth-of-type(2) {
+            background-color: var(--lightcyan);
+        }
+        a:nth-of-type(3) {
+            background-color: var(--lightblue);
+        }
+    
+    @media (min-width: 768px) {
+    padding:2em;
+    border-radius: 8px;
+    background:var(--midgrey);
+    }
+
+    @media (min-width: 930px) {
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "colleagues opportunities events"
+    ;
+    }
+}
+
 /* BODY OPMAAK */
-main {
-    color: var(--lightgrey);
+body {
+    background-color: var(--lightgrey);
 }
 
 a {
