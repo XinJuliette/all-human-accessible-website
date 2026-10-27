@@ -179,7 +179,7 @@ header {
 }
 
 /* CARD OPMAAK */
-.card {
+.cardvar1 {
     background-color: white;
     text-decoration: none;
     color: var(--bodytext);
@@ -257,6 +257,42 @@ header {
 
 }
 
+.cardvar2 {
+    background-color: white;
+    text-decoration: none;
+    color: var(--bodytext);
+        :hover {
+            cursor: pointer;
+        }
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "picture save save more"
+    "picture name name name"
+    "picture work work work"
+    "label label label label"
+    ;
+        img {
+            grid-area: picture;
+        }
+        #save-button {
+            grid-area: save;
+        }        
+        #more {
+            grid-area: more;
+        }
+        #name-function {
+            grid-area: name;
+        }
+        #workplace {
+            grid-area: work;
+        }
+        #labels {
+            grid-area: label;
+        }
+}
+
 /* BOOKMARKED AND RECOMMENDED BUTTONS */
     #filter-collapsed {
         padding: .5em;
@@ -278,3 +314,4 @@ header {
                 cursor: pointer;     
             }     
     }
+
