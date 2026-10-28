@@ -13,7 +13,7 @@ De instructie van deze leertaak staat in [WIKI](https://github.com/fdnd-task/all
 ## Introductie
 Tijdens deze sprint werk ik wederom aan het project PediaConnect. Dit is een social media platform dat is bedacht om op een makkelijke manier onderling contact te leggen voor kinderartsen. LinkedIn werkt niet goed genoeg voor de artsen, daarom is het project PediaConnect opgezet. Als front-ender (in spé) is het mijn taak om van het design, dat gemaakt is door een (voormalig) CMD-student, een statische website te coderen. 
 
-De CMD-student heeft hun design aan ons doorgegeven:
+De CMD-student heeft hun design aan ons doorgegeven. Dit is een screenshot van een klein deel van het design:
 <img width="1307" height="857" alt="image" src="https://github.com/user-attachments/assets/d5f3f1d9-007e-4c21-9753-047a81d50285" />
 
 Hieronder staat de link naar de website die ik nu aan het maken ben:
