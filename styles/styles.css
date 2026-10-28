@@ -244,10 +244,11 @@ header {
                     font-style: italic;
                     color: var(--lightbodytext)
                 }
-                    #name,#function {
-                        font-size: 1.2em;
-                        margin: .5em;
-                    }
+                #name,#function {
+                    font-size: 1.2em;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
         }
         #save-button {
             grid-area: save;
@@ -330,6 +331,8 @@ header {
             }
             #name,#function {
                 font-size: 1.2em;
+                margin-top: 0;
+                margin-bottom: 0;
             }
         #workplace {
             grid-area: work;
@@ -373,8 +376,9 @@ header {
                     color: var(--lightbodytext)
                 }
                 #name,#function {
-                        font-size: 1.2em;
-                        margin: .5em;
+                    font-size: 1.2em;
+                    margin-top: 0;
+                    margin-bottom: 0;
                 }
         }
 /*         #placeholder {
