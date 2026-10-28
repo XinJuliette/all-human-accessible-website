@@ -18,13 +18,27 @@
 }
 /* FONT-FAMILY */
 body {
+    margin-top: 0;
     background-color: var(--lightgrey);
     color: var(--bodytext);
     font-family: 'TASA orbiter', sans-serif;
+        h1 {
+            font-size: 2em;
+            font-weight: 1;
+            letter-spacing: .1em;
+        }
+        h2 {
+            font-size: 1.5em;
+            font-weight: 1;
+        }
+        h3 {
+            font-size: 1;
+            font-weight:bold;
+        }
 }
 /* NAV-BAR */
 .nav-bar {
-    background-color: white;
+    background-color: var(--lightgrey);
     display: grid;
     justify-items: center;
     align-items: center;
@@ -57,8 +71,8 @@ body {
 
 /* DROPDOWN NAVIGATION */
 header {
+    top: 0;
     position: sticky;
-    background-color: white;
 }
 
 .dropdownnav {
@@ -113,6 +127,8 @@ header {
     text-align: center;
 }
 #nav-buttons {
+    padding-left: 2em;
+    padding-right: 2em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -295,6 +311,18 @@ header {
         #name-function {
             grid-area: name;
         }
+            #name {
+                font-weight: 700;
+            }
+            #function {
+                font-weight: 200;
+                font-style: italic;
+                color: var(--lightbodytext)
+            }
+            #name,#function {
+                font-size: 1.2em;
+                margin: .5em;
+            }
         #workplace {
             grid-area: work;
         }
