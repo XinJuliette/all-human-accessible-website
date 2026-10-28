@@ -19,7 +19,7 @@
 }
 /* FONT-FAMILY */
 body {
-    margin-top: 0;
+    margin: 0;
     background-color: var(--background-website);
     color: var(--bodytext);
     font-family: 'TASA orbiter', sans-serif;
@@ -36,6 +36,10 @@ body {
             font-size: 1;
             font-weight:bold;
         }
+}
+
+main {
+    margin: 1em;
 }
 /* NAV-BAR */
 .nav-bar {
@@ -470,5 +474,28 @@ header {
     padding-left: 10em;
     padding-right: 10em;
     color: #494949;
+}
+
+/* FOOTER */
+.bottom-nav {
+    bottom: 0;
+    position: sticky;
+    width: 100%;
+    background-color: white;
+    height:5em;
+    align-content:center;
+        .mobile {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+                a {
+                    padding: .3em;
+                    border-radius: 1em;
+                }
+                a:hover {
+                    cursor:pointer;
+                    background-color: var(--lightgrey);
+                }
+        }
 }
 
