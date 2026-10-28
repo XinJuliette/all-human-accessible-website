@@ -13,6 +13,7 @@
     --background-website: #F2F2F2;
     --dropshadow: #14131340;
     --bordercolor: #F6F4F9;
+    --quotebox: #F0F9F8;
 
     --bodytext: #494949;
     --lightbodytext: #616161;
@@ -238,8 +239,13 @@ header {
                     margin-top: 0;
                     margin-bottom: 0;
                 }
+                #quote {
+                    background-color: var(--quotebox);
+                    padding: 1em;
+                    border-radius: .5em;
+                }
                 img {
-                    aspect-ratio: 1/2;
+                    aspect-ratio: 2/5;
                     height:100%;
                     object-fit: cover;
                     border-radius: 35em;
@@ -259,7 +265,16 @@ header {
                 }
                 #workplace {
                     #function2, #work {
-                        font-weight: 1;
+                        display:flex;
+                        flex-direction: row;
+                        justify-items: center;
+                        padding: .5em;
+                        gap: 1em;
+                            h4{
+                                font-weight: 1;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                            }
                     }
                 }
                 #labels {
@@ -319,7 +334,7 @@ header {
 
 .cardvar2 {
     display: grid;
-    grid-template-columns: 2fr 5fr 2em 2em;
+    grid-template-columns: 7em 5fr 2em 2em;
     grid-template-rows: repeat(4,1fr);
     grid-template-areas: 
     "picture empty save more"
