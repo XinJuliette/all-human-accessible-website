@@ -200,7 +200,7 @@ header {
 }
 
 /* CARD OPMAAK */
-.cardvar1, .cardvar2, .cardvar3 {
+.cardvar1, .cardvar2, .cardvar3, .cardvar4, .cardvar5, .cardvar6, .cardvar7 {
     background-color: white;
     border-color: var(--bordercolor);
     border-style: solid;
@@ -224,6 +224,59 @@ header {
     margin-top: 3em;
     margin-bottom: 3em;
 
+            /* ADDITIONAL OPMAAK KAARTJES */
+                #name {
+                    font-weight: 700;
+                }
+                #function {
+                    font-weight: 200;
+                    font-style: italic;
+                    color: var(--lightbodytext)
+                }
+                #name,#function {
+                    font-size: 1.2em;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                img {
+                    aspect-ratio: 1/2;
+                    height:100%;
+                    object-fit: cover;
+                    border-radius: 35em;
+                }
+                #save-button,#more {
+                    background-color: transparent;
+                    border-color: transparent;
+                        :hover {
+                            cursor:pointer;
+                        }
+                }
+                #comments {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: .5em;
+                }
+                #workplace {
+                    #function2, #work {
+                        font-weight: 1;
+                    }
+                }
+                #labels {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+                        p {
+                            border-color: var(--bodytext);
+                            border-style:solid;
+                            border-width: 2px;
+                            padding: .7em;
+                            border-radius: 4em;
+                            width: fit-content;
+                            text-wrap: nowrap;
+                        }
+                }
+
     
 }
 
@@ -239,20 +292,6 @@ header {
 
         #name-function {
             grid-area: name;
-
-                #name {
-                    font-weight: 700;
-                }
-                #function {
-                    font-weight: 200;
-                    font-style: italic;
-                    color: var(--lightbodytext)
-                }
-                #name,#function {
-                    font-size: 1.2em;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
         }
         #save-button {
             grid-area: save;
@@ -275,14 +314,6 @@ header {
         }
         #labels {
             grid-area: label;
-                p {
-                    border-color: var(--bodytext);
-                    border-style:solid;
-                    border-width: 2px;
-                    padding: .5em;
-                    border-radius: 4em;
-                    width: fit-content;
-                }
         }
 }
 
@@ -297,14 +328,8 @@ header {
     "label label label label"
     ;
 
-
-
         img {
-            border-radius: 35em;
             grid-area: picture;
-            aspect-ratio: 1/2;
-            height:100%;
-            object-fit: cover;
         }
         #placeholder {
             grid-area: empty;
@@ -315,45 +340,15 @@ header {
         #more {
             grid-area: more;
         }
-            #save-button,#more {
-                background-color: transparent;
-                border-color: transparent;
-                    :hover {
-                        cursor:pointer;
-                    }
-            }
         #name-function {
             grid-area: name;
         }
-            #name {
-                font-weight: 700;
-            }
-            #function {
-                font-weight: 200;
-                font-style: italic;
-                color: var(--lightbodytext)
-            }
-            #name,#function {
-                font-size: 1.2em;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
         #workplace {
             grid-area: work;
-                #function2, #work {
-                    font-weight: 1;
-                }
+
         }
         #labels {
             grid-area: label;
-                p {
-                    border-color: var(--bodytext);
-                    border-style:solid;
-                    border-width: 2px;
-                    padding: .5em;
-                    border-radius: 4em;
-                    width: fit-content;
-                }
         }
 }
 
@@ -370,66 +365,50 @@ header {
 
         #name-function {
             grid-area: name;
-
-                #name {
-                    font-weight: 700;
-                }
-                #function {
-                    font-weight: 200;
-                    font-style: italic;
-                    color: var(--lightbodytext)
-                }
-                #name,#function {
-                    font-size: 1.2em;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
         }
-/*         #placeholder {
-            grid-area: empty;
-        } */
         #save-button {
             grid-area: save;
         }
         #more {
             grid-area: more;
         }
-            #save-button,#more {
-                background-color: transparent;
-                border-color: transparent;
-                    :hover {
-                        cursor:pointer;
-                    }
-            }
         #title {
-            grid-area: title;
-                h4 {
-                font-size: 1.6em;
-                margin-bottom: 0;
-                }             
+            grid-area: title;   
         }
         #comments {
             grid-area: comment;
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: .5em;
         }
         #labels {
             grid-area: label;
-            display: flex;
-            flex-direction: row;
-            gap: 1em;
-                p {
-                    border-color: var(--bodytext);
-                    border-style:solid;
-                    border-width: 2px;
-                    padding: .5em;
-                    border-radius: 4em;
-                    width: fit-content;
-                    text-wrap: nowrap;
-                }
+        }
+}
+.cardvar5 {
+    display: grid;
+    grid-template-columns: 1fr 2em 2em;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "name save more"
+    "quote quote quote"
+    "work work work"
+    "label label label"
+    ;
+        #name-function {
+            grid-area: name;
+        }
+        #save-button {
+            grid-area: save;
+        }
+        #more {
+            grid-area: more;
+        }
+        #quote {
+            grid-area: quote;
+        }
+        #workplace {
+            grid-area: work;
+        }
+        #labels {
+            grid-area: label;
         }
 }
 
