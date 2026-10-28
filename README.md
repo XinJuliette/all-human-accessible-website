@@ -55,10 +55,10 @@ In deze code geef ik aan dat er een extra class toegevoegd moet worden zodra er 
 
 Het dropdown-menu staat buiten het veld dat je kunt zien en wordt simpelweg naar beneden verplaatst, binnen het zicht, zodra iemand op het hamburger-menu klikt. In de CSS-code zie je dit terug binnen ``.dropdownnav``:
 ``
-    translate: 0 -100%;
-    visibility: hidden;
-    transition: translate 0.3s, visibility -0.3s;
-    z-index: 10;
+translate: 0 -100%;
+visibility: hidden;
+transition: translate 0.3s, visibility -0.3s;
+z-index: 10;
 ``
 
 
