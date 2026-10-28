@@ -33,7 +33,7 @@ Tijdens deze nieuwe sprint hebben we geleerd van eerdere obstakels en hiervan ge
 De indeling van het dasboard bestaat uit verschillende secties (HTML). De volgorde hiervan is volgens het design: header (navigatie), introductie (meer navigatie), een recommended sectie met daarin profiel-kaartjes, een bookmarked-sectie met daarin pagina's die zijn opgeslagen door de gebruiker en onderin een footer (mobiele versie).
 
 Om het dropdown-menu te maken heb ik gebruik gemaakt van JavaScript:
-``code text``
+```
 const navbtn = document.querySelector(".navbtn");
 const menubtn = document.querySelector(".hamburgermenu");
 const deNav = document.querySelector(".dropdownnav")
@@ -50,6 +50,7 @@ navbtn.addEventListener("click", closeMenu);
 function closeMenu(){
   deNav.classList.remove("toonMenu");
 }
+```
 
 
 ## Bronnen
