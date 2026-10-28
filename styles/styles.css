@@ -437,16 +437,16 @@ header {
 }
 
 /* BOOKMARKED AND RECOMMENDED BUTTONS */
-    #filter-collapsed {
+    #content-filter-recommended,#content-filter-bookmarked{
         padding: .6em;
         border-radius: .7em;
         border-color: transparent;
         background-color: var(--midgrey);
     }
-
-    #filter-collapsed:hover {
-    cursor: pointer;
+    #content-filter-recommended,#content-filter-bookmarked:hover {
+        cursor: pointer;
     }
+
 
     #recommended-buttons button, #bookmarked-buttons button {
         background-color: transparent;
