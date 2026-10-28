@@ -53,7 +53,7 @@ function closeMenu(){
 ```
 In deze code geef ik aan dat er een extra class toegevoegd moet worden zodra er op de menu-knop ``.hamburgermenu`` wordt geklikt. De taak van deze knop is om het dropdown-menu het beeld in te laten komen. Binnen het dropdown-menu zit er een knop om deze weer te sluiten ``navbtn.addEventListener("click", closeMenu);``. Dit haalt ook meteen weer de extra class weg die in het begin werd toegevoegd. 
 
-Het dropdown-menu staat buiten het veld dat je kunt zien en wordt simpelweg naar beneden verplaatst, binnen het zicht, zodra iemand op het hamburger-menu klikt. In de CSS-code zie je dit terug binnen ``.dropdownnav``:
+Het dropdown-menu staat buiten het veld dat je kunt zien en wordt simpelweg naar beneden verplaatst, binnen het zicht, zodra iemand op het hamburger-menu klikt. In de CSS-code zie je dit terug binnen ``.dropdownnav``.
 ``
 translate: 0 -100%;
 visibility: hidden;
