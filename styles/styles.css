@@ -330,10 +330,12 @@ header {
             }
             #name,#function {
                 font-size: 1.2em;
-                margin: .5em;
             }
         #workplace {
             grid-area: work;
+                #function2, #work {
+                    font-weight: 1;
+                }
         }
         #labels {
             grid-area: label;
