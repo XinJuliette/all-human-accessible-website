@@ -30,7 +30,7 @@ Tijdens deze nieuwe sprint hebben we geleerd van eerdere obstakels en hiervan ge
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-De indeling van het dasboard bestaat uit verschillende secties (HTML). De volgorde hiervan is volgens het design: header (navigatie), introductie (meer navigatie), een recommended sectie met daarin profiel-kaartjes, een bookmarked-sectie met daarin pagina's die zijn opgeslagen door de gebruiker en onderin een footer (mobiele versie).
+De indeling van het dashboard bestaat uit verschillende secties (HTML). De volgorde hiervan is volgens het design: header (navigatie), introductie (meer navigatie), een recommended sectie met daarin profiel-kaartjes, een bookmarked-sectie met daarin pagina's die zijn opgeslagen door de gebruiker en onderin een footer (mobiele versie).
 
 Om het dropdown-menu te maken heb ik gebruik gemaakt van JavaScript:
 ```
@@ -60,7 +60,15 @@ visibility: hidden;
 transition: translate 0.3s, visibility -0.3s;
 z-index: 10;
 ``
-
+De cards heb ik in een flex-box gezet zodat deze bekeken kunnen worden door horizontaal te scrollen.
+``
+.card-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+``
 
 
 ## Bronnen
