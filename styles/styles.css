@@ -12,6 +12,7 @@
     --darkgrey: #322F2F;
     --background-website: #F2F2F2;
     --dropshadow: #14131340;
+    --bordercolor: #F6F4F9;
 
     --bodytext: #494949;
     --lightbodytext: #616161;
@@ -19,7 +20,7 @@
 /* FONT-FAMILY */
 body {
     margin-top: 0;
-    background-color: var(--lightgrey);
+    background-color: var(--background-website);
     color: var(--bodytext);
     font-family: 'TASA orbiter', sans-serif;
         h1 {
@@ -196,7 +197,10 @@ header {
 
 /* CARD OPMAAK */
 .cardvar1, .cardvar2, .cardvar3 {
-        background-color: white;
+    background-color: white;
+    border-color: var(--bordercolor);
+    border-style: solid;
+    border-width: .3em;
     text-decoration: none;
     color: var(--bodytext);
         :hover {
@@ -212,11 +216,14 @@ header {
         :hover {
             cursor: pointer;
         }
+    min-width: 20em;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .cardvar1 {
     display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: 8fr 2em 2em;
     grid-template-rows: repeat(3(1fr));
     grid-template-areas: 
     "name save more"
@@ -263,7 +270,7 @@ header {
             grid-area: label;
                 p {
                     border-color: var(--bodytext);
-                    border-style:outset;
+                    border-style:solid;
                     border-width: 2px;
                     padding: .5em;
                     border-radius: 4em;
@@ -274,7 +281,7 @@ header {
 
 .cardvar2 {
     display: grid;
-    grid-template-columns: 2fr 5fr 1fr 1fr;
+    grid-template-columns: 2fr 5fr 2em 2em;
     grid-template-rows: repeat(4,1fr);
     grid-template-areas: 
     "picture empty save more"
@@ -330,7 +337,7 @@ header {
             grid-area: label;
                 p {
                     border-color: var(--bodytext);
-                    border-style:outset;
+                    border-style:solid;
                     border-width: 2px;
                     padding: .5em;
                     border-radius: 4em;
@@ -341,7 +348,7 @@ header {
 
 .cardvar3 {
     display: grid;
-    grid-template-columns: 3fr 2fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 2em 2em;
     grid-template-rows: 1fr 2fr 1fr 1fr;
     grid-template-areas: 
     "name name save more"
@@ -378,7 +385,6 @@ header {
             #save-button,#more {
                 background-color: transparent;
                 border-color: transparent;
-                justify-self:right;
                     :hover {
                         cursor:pointer;
                     }
@@ -405,7 +411,7 @@ header {
             gap: 1em;
                 p {
                     border-color: var(--bodytext);
-                    border-style:outset;
+                    border-style:solid;
                     border-width: 2px;
                     padding: .5em;
                     border-radius: 4em;
@@ -415,10 +421,19 @@ header {
         }
 }
 
+/* SCROLL-GRID */
+.card-grid {
+/*     background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
 /* BOOKMARKED AND RECOMMENDED BUTTONS */
     #filter-collapsed {
-        padding: .5em;
-        border-radius: .3em;
+        padding: .6em;
+        border-radius: .7em;
         border-color: transparent;
         background-color: var(--midgrey);
     }
@@ -436,4 +451,16 @@ header {
                 cursor: pointer;     
             }     
     }
+
+    /* SWIPE FOR MORE CONTENT */
+.swipe {
+    margin: .5em;
+    display: grid;
+    justify-items: center;
+    text-wrap: wrap;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    color: #494949;
+}
 
