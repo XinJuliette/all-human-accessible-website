@@ -21,25 +21,6 @@ Hieronder staat de link naar de website die ik nu aan het maken ben:
 https://xinjuliette.github.io/all-human-accessible-website/
 <img width="775" height="1260" alt="image" src="https://github.com/user-attachments/assets/b7ce3155-94e7-4b51-bc22-0777bce5789b" />
 
-Naast mij hebben ook anderen aan dit project gewerkt. Dit zijn de links naar hun werk:
-### Responsive focused
-- https://github.com/XinJuliette/the-client-website
-- https://github.com/toonicwesley/the-client-website
-- https://github.com/Davidoo379/the-client-website
-- https://github.com/savannahvdheld/the-client-website
-- https://github.com/SambalSamss/the-client-website
-- https://github.com/Rickd377/the-client-website
-- https://github.com/Chahedddd/the-client-website
-### Accessibility focused
-- https://github.com/XinJuliette/all-human-accessible-website
-- https://github.com/toonicwesley/all-human-accessible-website
-- https://github.com/Davidoo379/all-human-accessible-website
-- https://github.com/savannahvdheld/all-human-accessible-website
-- https://github.com/SambalSamss/all-human-accessible-website
-- https://github.com/Rickd377/all-human-accessible-website
-- https://github.com/Chahedddd/all-human-accessible-website
-
-
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
@@ -92,6 +73,37 @@ De cards heb ik in een flex-box gezet zodat deze bekeken kunnen worden door hori
 
 
 ## Bronnen
+De originele leertaak staat in [WIKI](https://github.com/fdnd-task/all-human-accessible-website/wiki)
+
+### Figma Design
+- https://www.figma.com/design/EJEXRWKJcgaRjUzIWEhgq9/OVERDRACHT-Pediaconnect--FINAL-version-NVK-kleuren-?node-id=3407-48541&t=ESQgIHB93kK5txmo-0
+
+Naast mij hebben ook anderen aan dit project gewerkt. Dit zijn de links naar hun werk:
+### Responsive focused
+- https://github.com/XinJuliette/the-client-website
+- https://github.com/toonicwesley/the-client-website
+- https://github.com/Davidoo379/the-client-website
+- https://github.com/savannahvdheld/the-client-website
+- https://github.com/SambalSamss/the-client-website
+- https://github.com/Rickd377/the-client-website
+- https://github.com/Chahedddd/the-client-website
+### Accessibility focused
+- https://github.com/XinJuliette/all-human-accessible-website
+- https://github.com/toonicwesley/all-human-accessible-website
+- https://github.com/Davidoo379/all-human-accessible-website
+- https://github.com/savannahvdheld/all-human-accessible-website
+- https://github.com/SambalSamss/all-human-accessible-website
+- https://github.com/Rickd377/all-human-accessible-website
+- https://github.com/Chahedddd/all-human-accessible-website
+
+## Contributors
+- @XinJuliette
+- @ToonicWesley
+- @Davidoo379
+- @savannahvdheld
+- @SambalSamss
+- @Rickd377
+- @Chahedddd
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
