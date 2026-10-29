@@ -61,7 +61,7 @@ visibility: hidden;
 transition: translate 0.3s, visibility -0.3s;
 z-index: 10;
 ```
-De cards heb ik in een flex-box gezet zodat deze bekeken kunnen worden door horizontaal te scrollen.
+De cards heb ik in een flex-box gezet zodat deze bekeken kunnen worden door horizontaal te scrollen. Dezelfde technieken worden gebruikt voor zowel de cardgrid van recommended-content als de card-grid van bookmarked-content.
 ```
 .card-grid {
     display: flex;
