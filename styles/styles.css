@@ -139,6 +139,8 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1em;
+    max-width: fit-content;
+    justify-self: center;
 
     grid-template-areas: 
     "colleagues opportunities"
@@ -184,8 +186,11 @@ header {
             background-color: var(--lightblue);
         }
     
-    @media (min-width: 768px) {
-    padding:2em;
+    @media (min-width: 597px) {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
     border-radius: 8px;
     background:var(--midgrey);
     }
