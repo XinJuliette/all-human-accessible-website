@@ -30,11 +30,11 @@ body {
             letter-spacing: .1em;
         }
         h2 {
-            font-size: 1.5em;
+            font-size: 1.7em;
             font-weight: 1;
         }
         h3 {
-            font-size: 1;
+            font-size: 1.5em;
             font-weight:bold;
         }
 }
@@ -262,6 +262,11 @@ header {
                             cursor:pointer;
                         }
                 }
+                #title {
+                    h4 {
+                        font-size: 1.6em;
+                    }
+                }
                 #comments {
                     display: flex;
                     flex-direction: row;
@@ -294,6 +299,8 @@ header {
                             border-radius: 4em;
                             width: fit-content;
                             text-wrap: nowrap;
+                            text-align: center;
+                            height:fit-content;
                         }
                 }
 
@@ -302,7 +309,7 @@ header {
 
 .cardvar1 {
     display: grid;
-    grid-template-columns: 8fr 2em 2em;
+    grid-template-columns: 1fr 2em 2em;
     grid-template-rows: repeat(3(1fr));
     grid-template-areas: 
     "name save more"
@@ -319,25 +326,15 @@ header {
         #more {
             grid-area: more;
         }
-            #save-button,#more {
-                background-color: transparent;
-                border-color: transparent;
-                    :hover {
-                        cursor:pointer;
-                    }
-            }
         #title {
             grid-area: title;
-                h4 {
-                    font-size: 1.6em;
-                }
         }
         #labels {
             grid-area: label;
         }
 }
 
-.cardvar2 {
+.cardvar2, .cardvar7 {
     display: grid;
     grid-template-columns: 7em 5fr 2em 2em;
     grid-template-rows: repeat(4,1fr);
@@ -402,7 +399,7 @@ header {
             grid-area: label;
         }
 }
-.cardvar5 {
+.cardvar5, .cardvar6 {
     display: grid;
     grid-template-columns: 1fr 2em 2em;
     grid-template-rows: repeat(4, 1fr);
@@ -431,6 +428,7 @@ header {
             grid-area: label;
         }
 }
+
 
 /* SCROLL-GRID */
 .card-grid {
