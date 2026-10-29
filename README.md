@@ -27,6 +27,8 @@ https://xinjuliette.github.io/all-human-accessible-website/
 <!-- Voeg een link toe naar Github Pages 🌐-->
 Tijdens deze nieuwe sprint hebben we geleerd van eerdere obstakels en hiervan geleerd. Ook hebben wij deze keer nieuwe kennis op gedaan over hoe wij "human-first" kunnen coderen, toegankelijkheid stond dus centraal. We zijn helemaal opnieuw begonnen, maar nu met als prioriteit om de website toegankelijk te bouwen. 
 <!-- VOEG HIER EEN FOTO TOE VAN LIGHTHOUSE TEST -->
+<img width="541" height="903" alt="image" src="https://github.com/user-attachments/assets/4d2d896a-887d-481b-b10e-f86ba961128a" />
+
 
 
 ## Kenmerken
