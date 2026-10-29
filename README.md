@@ -18,7 +18,8 @@ De CMD-student heeft hun design aan ons doorgegeven. Dit is een screenshot van e
 
 Hieronder staat de link naar de website die ik nu aan het maken ben:
 https://xinjuliette.github.io/all-human-accessible-website/
-<!-- VOEG HIER EEN FOTO VAN DE WBESITE IN -->
+<img width="775" height="1260" alt="image" src="https://github.com/user-attachments/assets/b7ce3155-94e7-4b51-bc22-0777bce5789b" />
+
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
