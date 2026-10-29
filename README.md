@@ -21,6 +21,24 @@ Hieronder staat de link naar de website die ik nu aan het maken ben:
 https://xinjuliette.github.io/all-human-accessible-website/
 <img width="775" height="1260" alt="image" src="https://github.com/user-attachments/assets/b7ce3155-94e7-4b51-bc22-0777bce5789b" />
 
+Naast mij hebben ook anderen aan dit project gewerkt. Dit zijn de links naar hun werk:
+### Responsive focused
+- https://github.com/XinJuliette/the-client-website
+- https://github.com/toonicwesley/the-client-website
+- https://github.com/Davidoo379/the-client-website
+- https://github.com/savannahvdheld/the-client-website
+- https://github.com/SambalSamss/the-client-website
+- https://github.com/Rickd377/the-client-website
+- https://github.com/Chahedddd/the-client-website
+### Accessibility focused
+- https://github.com/XinJuliette/all-human-accessible-website
+- https://github.com/toonicwesley/all-human-accessible-website
+- https://github.com/Davidoo379/all-human-accessible-website
+- https://github.com/savannahvdheld/all-human-accessible-website
+- https://github.com/SambalSamss/all-human-accessible-website
+- https://github.com/Rickd377/all-human-accessible-website
+- https://github.com/Chahedddd/all-human-accessible-website
+
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -32,7 +50,7 @@ Tijdens deze nieuwe sprint hebben we geleerd van eerdere obstakels en hiervan ge
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-De indeling van het dashboard bestaat uit verschillende secties (HTML). De volgorde hiervan is volgens het design: header (navigatie), introductie (meer navigatie), een recommended sectie met daarin profiel-kaartjes, een bookmarked-sectie met daarin pagina's die zijn opgeslagen door de gebruiker en onderin een footer (mobiele versie).
+De indeling van het dashboard bestaat uit verschillende secties (HTML). De volgorde hiervan is volgens het design: header (navigatie), introductie (meer navigatie), een recommended-sectie met daarin profiel-kaartjes, een bookmarked-sectie met daarin pagina's die zijn opgeslagen door de gebruiker en onderin een footer (mobiele versie).
 
 Om het dropdown-menu te maken heb ik gebruik gemaakt van JavaScript:
 ```
