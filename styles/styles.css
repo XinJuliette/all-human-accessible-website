@@ -1,5 +1,5 @@
 /* COLOUR-PALETTE */
-/* :root {
+:root {
     --lightpink: #EFB4D9;
     --darkpink: #E68EC5;
     --deeppink: #80285F;
@@ -17,11 +17,8 @@
 
     --bodytext: #494949;
     --lightbodytext: #616161;
-} */
-
-#test {
-    color: var(--button-rainbow-green);
 }
+
 
 /* FONT-FAMILY */
 body {
